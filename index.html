@@ -1,9 +1,1416 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="7; url='https://healthdata.usm.my:3939/content/174'" />
-  </head>
-  <body>
-    <p>Covid-19 Dashboard has moved to <a href="https://healthdata.usm.my:3939/content/174">https://healthdata.usm.my:3939/content/174</a>.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Azeez Hasan — Public Health Specialist & Epidemiologist</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Public health professional with Ph.D. in Community Medicine and Public Health, 5+ years teaching/research experience in epidemiology and biostatistics.">
+    <meta name="keywords" content="public health, epidemiology, biostatistics, community medicine, PhD researcher, health education">
+    <meta name="author" content="Ahmed Azeez Hasan">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Ahmed Azeez Hasan — Public Health Specialist & Epidemiologist">
+    <meta property="og:description" content="Public health professional with Ph.D. in Community Medicine and Public Health, 5+ years teaching/research experience in epidemiology and biostatistics.">
+    <meta property="og:image" content="./assets/avatar.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ahmed Azeez Hasan — Public Health Specialist & Epidemiologist">
+    <meta name="twitter:description" content="Public health professional with Ph.D. in Community Medicine and Public Health, 5+ years teaching/research experience in epidemiology and biostatistics.">
+    <meta name="twitter:image" content="./assets/avatar.png">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ahmed Azeez Hasan",
+        "jobTitle": "Public Health Specialist / Epidemiologist",
+        "email": "mailto:ahmed.azeez1987@gmail.com",
+        "telephone": "+964 7724265093",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kut City",
+            "addressRegion": "Wasit Governorate",
+            "addressCountry": "Iraq"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/ahmed-a-hasan",
+            "https://orcid.org/0000-0002-9004-9689",
+            "https://scholar.google.com/citations?user=ahmed-aziz-hasan"
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Universiti Sains Malaysia"
+        }
+    }
+    </script>
+    
+    <style>
+        /* CSS Variables for Theme Colors - Update theme colors here */
+        :root {
+            --primary-color: #2F5376;
+            --secondary-color: #F4F6F8;
+            --accent-color: #2AA89E;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --white: #ffffff;
+            --shadow: 0 2px 10px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+            --max-width: 1200px;
+        }
+        
+        /* Alternative Theme (Charcoal + Electric Blue) - Uncomment to use
+        :root {
+            --primary-color: #2C3E50;
+            --secondary-color: #ECF0F1;
+            --accent-color: #3498DB;
+            --text-dark: #2C3E50;
+            --text-light: #7F8C8D;
+            --white: #ffffff;
+            --shadow: 0 2px 10px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+            --max-width: 1200px;
+        }
+        */
+        
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+        
+        /* Skip to content link for accessibility */
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 100;
+        }
+        
+        .skip-to-content:focus {
+            top: 6px;
+        }
+        
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            transition: var(--transition);
+            padding: 1rem 0;
+        }
+        
+        header.scrolled {
+            padding: 0.5rem 0;
+        }
+        
+        nav {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            transition: var(--transition);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a:focus {
+            color: var(--accent-color);
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+        
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+        }
+        
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary-color);
+            margin: 3px 0;
+            transition: var(--transition);
+        }
+        
+        /* Main Content */
+        main {
+            margin-top: 80px;
+        }
+        
+        section {
+            padding: 4rem 2rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+        
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: var(--accent-color);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, rgba(255,255,255,1) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 6rem 2rem 4rem;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero-avatar {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            background: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--white);
+            font-weight: bold;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero-title {
+            font-size: 1.5rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+        
+        .hero-summary {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background: var(--accent-color);
+            color: var(--white);
+        }
+        
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background: #238b81;
+            transform: translateY(-2px);
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        
+        .btn-secondary:hover,
+        .btn-secondary:focus {
+            background: var(--primary-color);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .contact-info {
+            background: var(--secondary-color);
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            gap: 1rem;
+        }
+        
+        .contact-item svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--accent-color);
+        }
+        
+        .copy-email {
+            background: var(--accent-color);
+            color: var(--white);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            transition: var(--transition);
+        }
+        
+        .copy-email:hover,
+        .copy-email:focus {
+            background: #238b81;
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+        
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--accent-color);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--secondary-color);
+            border-radius: 10px;
+            margin-left: 1rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.75rem;
+            top: 1.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            border: 3px solid var(--white);
+        }
+        
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .timeline-title {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.25rem;
+        }
+        
+        .timeline-subtitle {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+        
+        .timeline-year {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .timeline-content {
+            margin-top: 1rem;
+        }
+        
+        .timeline-content.collapsed {
+            display: none;
+        }
+        
+        .timeline-content ul {
+            margin-left: 1rem;
+        }
+        
+        .timeline-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .skill-category h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .skill-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        
+        .skill-name {
+            font-weight: 600;
+        }
+        
+        .skill-level {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background: var(--accent-color);
+            border-radius: 4px;
+            transition: width 0.8s ease-in-out;
+        }
+        
+        /* Online Profiles */
+        .profiles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .profile-card {
+            background: var(--secondary-color);
+            padding: 2rem;
+            border-radius: 10px;
+            transition: var(--transition);
+            text-decoration: none;
+            color: var(--text-dark);
+        }
+        
+        .profile-card:hover,
+        .profile-card:focus {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+        
+        .profile-card svg {
+            width: 40px;
+            height: 40px;
+            fill: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .profile-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0;
+        }
+        
+        /* References */
+        .references-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .reference-card {
+            background: var(--secondary-color);
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .reference-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .reference-card p {
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+        }
+        
+        .reference-contact {
+            margin-top: 1rem;
+        }
+        
+        .reference-contact a {
+            color: var(--accent-color);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        
+        .reference-contact a:hover,
+        .reference-contact a:focus {
+            text-decoration: underline;
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--secondary-color);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(42, 168, 158, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .form-error {
+            color: #e74c3c;
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+        
+        .form-group.error input,
+        .form-group.error textarea {
+            border-color: #e74c3c;
+        }
+        
+        .form-group.error .form-error {
+            display: block;
+        }
+        
+        .contact-info-bottom {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .contact-info-bottom a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .contact-info-bottom a:hover,
+        .contact-info-bottom a:focus {
+            text-decoration: underline;
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+        
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 1rem 1.5rem;
+            border-radius: 5px;
+            box-shadow: var(--shadow);
+            transform: translateX(400px);
+            transition: var(--transition);
+            z-index: 1000;
+        }
+        
+        .toast.show {
+            transform: translateX(0);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: var(--shadow);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            .hamburger.active span:nth-child(1) {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+            
+            .hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .hamburger.active span:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 250px;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .timeline {
+                padding-left: 1rem;
+            }
+            
+            .timeline-item {
+                margin-left: 0.5rem;
+            }
+            
+            .timeline-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            section {
+                padding: 3rem 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-avatar {
+                width: 150px;
+                height: 150px;
+                font-size: 3rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .timeline::before {
+                left: -0.5rem;
+            }
+            
+            .timeline-item::before {
+                left: -1.25rem;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            * {
+                background: white !important;
+                color: black !important;
+                box-shadow: none !important;
+            }
+            
+            header,
+            .hamburger,
+            .hero-cta,
+            .copy-email,
+            .contact-form,
+            .toast {
+                display: none !important;
+            }
+            
+            main {
+                margin-top: 0;
+            }
+            
+            section {
+                padding: 1rem 0;
+                page-break-inside: avoid;
+            }
+            
+            .hero {
+                min-height: auto;
+                padding: 2rem 0;
+            }
+            
+            .timeline::before,
+            .timeline-item::before {
+                display: none;
+            }
+            
+            .timeline-item {
+                margin-left: 0;
+                border: 1px solid #ccc;
+                page-break-inside: avoid;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            a[href^="mailto:"]:after {
+                content: " (" attr(href) ")";
+            }
+            
+            a[href^="tel:"]:after {
+                content: " (" attr(href) ")";
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main" class="skip-to-content">Skip to main content</a>
+    
+    <header>
+        <nav>
+            <a href="#hero" class="logo">Ahmed Azeez Hasan</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#profiles">Profiles</a></li>
+                <li><a href="#references">References</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <!-- Profile photo placeholder - Replace with actual photo in assets/avatar.png -->
+                <div class="hero-avatar" alt="Ahmed Azeez Hasan profile photo">AH</div>
+                <h1>Ahmed Azeez Hasan</h1>
+                <p class="hero-title">Public Health Specialist / Epidemiologist</p>
+                <p class="hero-summary">Public health professional with a Ph.D. in Community Medicine and Public Health and over 5 years of experience in teaching and research, particularly in epidemiology, biostatistics, and public health practice.</p>
+                <div class="hero-cta">
+                    <!-- Update CV link here -->
+                    <a href="./assets/CV.pdf" class="btn btn-primary" download>Download CV</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Public health professional with a Ph.D. in Community Medicine and Public Health and over 5 years of experience in teaching and research, particularly in epidemiology, biostatistics, and public health practice. Currently serving at Wasit Health District, with more than 10 years of experience in training health workers and contributing to community health programs. Also involved in teaching medical students at Wasit College of Medicine. Holds a WHO e-Instructor certification and Training of Trainers (ToT) qualification, with a strong interest in health education, applied research, and capacity building.</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <!-- Phone icon -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        <!-- Update phone number here -->
+                        <a href="tel:+9647724265093">+964 7724265093</a>
+                    </div>
+                    <div class="contact-item">
+                        <!-- Email icon -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <!-- Update email here -->
+                        <span>ahmed.azeez1987@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <!-- Location icon -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        <!-- Update location here -->
+                        <span>Kut City, Wasit Governorate, Iraq</span>
+                    </div>
+                    <button class="copy-email" aria-label="Copy email to clipboard">Copy Email</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header" tabindex="0" role="button" aria-label="Toggle education details">
+                        <div>
+                            <h3 class="timeline-title">Ph.D. in Community Medicine and Public Health</h3>
+                            <p class="timeline-subtitle">Universiti Sains Malaysia</p>
+                        </div>
+                        <span class="timeline-year">2021–2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <p><strong>Focus:</strong> Epidemiology of Infectious Diseases</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header" tabindex="0" role="button" aria-label="Toggle education details">
+                        <div>
+                            <h3 class="timeline-title">Master's Degree in Community Health</h3>
+                            <p class="timeline-subtitle">Middle Technical University, Baghdad, Iraq</p>
+                        </div>
+                        <span class="timeline-year">2015–2018</span>
+                    </div>
+                    <div class="timeline-content">
+                        <p><strong>GPA:</strong> 79.84% (College of Health and Medical Techniques)</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header" tabindex="0" role="button" aria-label="Toggle education details">
+                        <div>
+                            <h3 class="timeline-title">Bachelor's Degree in Community Health</h3>
+                            <p class="timeline-subtitle">Middle Technical University, Baghdad, Iraq</p>
+                        </div>
+                        <span class="timeline-year">2006–2010</span>
+                    </div>
+                    <div class="timeline-content">
+                        <p>Graduated 2010 (College of Health and Medical Techniques)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header" tabindex="0" role="button" aria-label="Toggle experience details">
+                        <div>
+                            <h3 class="timeline-title">PhD Researcher</h3>
+                            <p class="timeline-subtitle">Universiti Sains Malaysia</p>
+                        </div>
+                        <span class="timeline-year">2021–2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Research in Community Medicine and Public Health</li>
+                            <li>Served as Postgraduate Student Representative and Journal Club Representative for the Department of Community Medicine</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header" tabindex="0" role="button" aria-label="Toggle experience details">
+                        <div>
+                            <h3 class="timeline-title">Community Health Specialist</h3>
+                            <p class="timeline-subtitle">Public Health Department of Wasit, Iraq</p>
+                        </div>
+                        <span class="timeline-year">2018–2021</span>
+                    </div>
+                    <div class="timeline-content">
+                        <p><strong>Maternal and Child Health Division</strong></p>
+                        <ul>
+                            <li>Conducted training for health workers and doctors on Antenatal Care (ANC), Integrated Management of Neonatal and Child Health (IMNCH), and Emergency Obstetric and Neonatal Care (EmONC)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header" tabindex="0" role="button" aria-label="Toggle experience details">
+                        <div>
+                            <h3 class="timeline-title">Public Health Specialist</h3>
+                            <p class="timeline-subtitle">Public Health Department of Wasit, Iraq</p>
+                        </div>
+                        <span class="timeline-year">2010–2015</span>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Communicable Diseases and Health Visitor Units (2011–2013)</li>
+                            <li>Medical Unit and Pharmacy Unit at a health centre (2013–2014)</li>
+                            <li>Antenatal and Postnatal Care at a health centre (2014–2015)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Public health and epidemiological study design</span>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">SEM and path analysis (Mplus)</span>
+                            <span class="skill-level">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Instrument development, adaptation, and validation</span>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Software</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">JAMOVI, JASP, R, and Mplus</span>
+                            <span class="skill-level">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Training & Certification</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Health worker training (ToT certified)</span>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">WHO e-Instructor certified</span>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Online Profiles Section -->
+        <section id="profiles">
+            <h2>Online Profiles</h2>
+            <div class="profiles-grid">
+                <a href="https://www.linkedin.com/in/ahmed-a-hasan" class="profile-card" target="_blank" rel="noopener noreferrer">
+                    <!-- LinkedIn icon -->
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    <h3>LinkedIn</h3>
+                    <p>Ahmed A. Hasan</p>
+                </a>
+                
+                <a href="https://orcid.org/0000-0002-9004-9689" class="profile-card" target="_blank" rel="noopener noreferrer">
+                    <!-- ORCID icon -->
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947 0 .525-.422.947-.947.947-.525 0-.946-.422-.946-.947 0-.525.421-.947.946-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.925-1.303 3.925-3.722 0-2.016-1.284-3.722-3.925-3.722h-2.297z"/>
+                    </svg>
+                    <h3>ORCID</h3>
+                    <p>0000-0002-9004-9689</p>
+                </a>
+                
+                <a href="https://scholar.google.com/citations?user=ahmed-aziz-hasan" class="profile-card" target="_blank" rel="noopener noreferrer">
+                    <!-- Google Scholar icon -->
+                    <svg viewBox="0 0 24 24">
+                        <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+                    </svg>
+                    <h3>Google Scholar</h3>
+                    <p>Ahmed Aziz Hasan</p>
+                </a>
+            </div>
+        </section>
+        
+        <!-- References Section -->
+        <section id="references">
+            <h2>References</h2>
+            <div class="references-grid">
+                <div class="reference-card">
+                    <h3>Assoc. Prof. Dr. Najib Majdi Yaacob</h3>
+                    <p>Unit of Biostatistic and Research Methods, USM</p>
+                    <div class="reference-contact">
+                        <a href="tel:+60199462312">+60-19-946 2312</a>
+                        <a href="mailto:najibmy@usm.my">najibmy@usm.my</a>
+                    </div>
+                </div>
+                
+                <div class="reference-card">
+                    <h3>Dr. Anis Kausar Ghazali</h3>
+                    <p>Unit of Biostatistic and Research Methods, USM</p>
+                    <div class="reference-contact">
+                        <a href="tel:+60116284953">+60-11-628 4953</a>
+                        <a href="mailto:anisq@usm.my">anisq@usm.my</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required aria-describedby="nameError">
+                    <div class="form-error" id="nameError">Please enter your name</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required aria-describedby="emailError">
+                    <div class="form-error" id="emailError">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required aria-describedby="messageError" placeholder="Please share your message here..."></textarea>
+                    <div class="form-error" id="messageError">Message must be at least 10 characters long</div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            
+            <div class="contact-info-bottom">
+                <p>Or reach me directly:</p>
+                <!-- Update phone number and email here -->
+                <a href="tel:+9647724265093">+964 7724265093</a> | 
+                <a href="mailto:ahmed.azeez1987@gmail.com">ahmed.azeez1987@gmail.com</a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Toast notification for copy email -->
+    <div class="toast" id="toast" role="alert" aria-live="polite">
+        Email copied to clipboard!
+    </div>
+    
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    const navLinks = document.querySelector('.nav-links');
+                    const hamburger = document.querySelector('.hamburger');
+                    navLinks.classList.remove('active');
+                    hamburger.classList.remove('active');
+                }
+            });
+        });
+        
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+        
+        // Sticky header scroll effect
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+        
+        // Timeline expand/collapse functionality
+        document.querySelectorAll('.timeline-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const isCollapsed = content.classList.contains('collapsed');
+                
+                // Close all other timeline items
+                document.querySelectorAll('.timeline-content').forEach(item => {
+                    if (item !== content) {
+                        item.classList.add('collapsed');
+                    }
+                });
+                
+                // Toggle current item
+                content.classList.toggle('collapsed', !isCollapsed);
+                
+                // Update ARIA attributes
+                this.setAttribute('aria-expanded', isCollapsed);
+                content.setAttribute('aria-hidden', !isCollapsed);
+            });
+            
+            // Initialize ARIA attributes
+            const content = header.nextElementSibling;
+            header.setAttribute('aria-expanded', 'true');
+            content.setAttribute('aria-hidden', 'false');
+        });
+        
+        // Copy email functionality
+        const copyEmailBtn = document.querySelector('.copy-email');
+        const toast = document.getElementById('toast');
+        
+        copyEmailBtn.addEventListener('click', async () => {
+            const email = 'ahmed.azeez1987@gmail.com'; // Update email here
+            
+            try {
+                await navigator.clipboard.writeText(email);
+                showToast('Email copied to clipboard!');
+            } catch (err) {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = email;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                showToast('Email copied to clipboard!');
+            }
+        });
+        
+        function showToast(message) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+        
+        // Contact form validation and submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            // Validate form
+            let isValid = true;
+            
+            // Validate name
+            const nameGroup = document.getElementById('name').parentElement;
+            if (!name) {
+                nameGroup.classList.add('error');
+                isValid = false;
+            } else {
+                nameGroup.classList.remove('error');
+            }
+            
+            // Validate email
+            const emailGroup = document.getElementById('email').parentElement;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+                emailGroup.classList.add('error');
+                isValid = false;
+            } else {
+                emailGroup.classList.remove('error');
+            }
+            
+            // Validate message
+            const messageGroup = document.getElementById('message').parentElement;
+            if (!message || message.length < 10) {
+                messageGroup.classList.add('error');
+                isValid = false;
+            } else {
+                messageGroup.classList.remove('error');
+            }
+            
+            if (isValid) {
+                // Create mailto link
+                const subject = encodeURIComponent('Website Contact — Ahmed Azeez Hasan');
+                const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+                const mailtoLink = `mailto:ahmed.azeez1987@gmail.com?subject=${subject}&body=${body}`;
+                
+                // Try to open mailto link
+                const mailtoWindow = window.open(mailtoLink);
+                
+                // Show fallback message after a delay
+                setTimeout(() => {
+                    showToast('If your email client didn\'t open, you can email ahmed.azeez1987@gmail.com directly');
+                }, 1000);
+                
+                // Reset form
+                contactForm.reset();
+            }
+        });
+        
+        // Remove error states when user starts typing
+        document.querySelectorAll('#contactForm input, #contactForm textarea').forEach(input => {
+            input.addEventListener('input', function() {
+                this.parentElement.classList.remove('error');
+            });
+        });
+        
+        // Animate skill bars on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const skillsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-progress');
+                    skillBars.forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 100);
+                    });
+                }
+            });
+        }, observerOptions);
+        
+        const skillsSection = document.getElementById('skills');
+        if (skillsSection) {
+            skillsObserver.observe(skillsSection);
+        }
+        
+        // Add keyboard navigation for timeline items
+        document.querySelectorAll('.timeline-header').forEach(header => {
+            header.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        });
+        
+        // Language detection and direction support
+        document.documentElement.lang = 'en';
+        document.documentElement.dir = 'ltr';
+        
+        // Add focus management for accessibility
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Tab') {
+                document.body.classList.add('keyboard-navigation');
+            }
+        });
+        
+        document.addEventListener('mousedown', function() {
+            document.body.classList.remove('keyboard-navigation');
+        });
+        
+        // Preload critical resources
+        const preloadImage = new Image();
+        preloadImage.src = './assets/avatar.png';
+    </script>
+</body>
 </html>
